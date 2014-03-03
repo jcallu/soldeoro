@@ -1,2 +1,2 @@
 #!/bin/sh
-HEROKU_APP=appstack-metrics-staging exec heroku "$@"
+HEROKU_APP=soldeoro-promote-staging exec heroku "$@"
