@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'slim', '>=1.3.8'
 gem 'rails'
 gem 'zurb-foundation'
+gem 'activeresource'
 
 group :assets do
   gem 'sass-rails',   '>= 3.2.3'
