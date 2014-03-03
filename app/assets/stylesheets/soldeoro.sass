@@ -1,0 +1,103 @@
+$custom-color: rgb(217,185,35)
+
+.top-bar
+  .icon
+    display: inline
+    margin-left: 5px
+
+  li.disabled
+    a
+      color: gray
+
+  .toggle-topbar.menu-icon a
+    padding: 0 20px
+
+  .dropdown li a
+    background: $custom-color
+    height: 40px
+    padding: 10px 0
+    margin-top: auto
+    text-indent: 15px
+
+  ul li:hover > a
+    color: black
+
+  .name h1 a
+    width: 100%
+    padding: 0 5px
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]
+  border-right: solid 1px $custom-color
+  border-left: solid 1px $custom-color
+
+.sub-nav dd.active a
+  background: #5180A2
+
+.number
+  float: left
+  margin-right: 10px
+
+.hidden
+  display: none
+
+dl.soldeoro
+  width: 175px
+  display: block
+  text-align: center
+  background-color: rgb(23, 49, 68)
+  dd
+    font-size: 40px
+    line-height: 1.4em
+    color: white
+    font-weight: bold
+    margin: 0px 10px
+    padding: 0px
+    text-shadow: none
+    .icon
+      font-weight: normal
+      font-size: 35px
+      display: inline
+  dt
+    font-size: 11px
+    height: 33px
+    line-height: 33px
+    color: white
+    text-transform: uppercase
+    font-weight: normal
+    margin: 5px 0
+    padding: 0px
+    border-top-width: 1px
+    border-top-style: solid
+    border-top-color: white
+    background-color: rgb(81, 128, 162)
+    text-shadow: none
+
+table.data
+  width: 100%
+  th, td
+    0em 0.625em
+  .bar
+    width: 400px
+
+@media only screen and (max-width: 768px)
+  .desktop-only
+    display: none
+
+  table.data
+    font-size: 85%
+    .bar
+      display: none
+  dl.soldeoro
+    width: 130px
+    dd
+      font-size: 25px
+      .icon
+        font-size: 20px
+    dt
+      font-size: 9px
+      height: 26px
+      line-height: 26px
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2)
+  div.background-image
+    padding-top: 20%
