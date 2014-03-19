@@ -1,3 +1,11 @@
+div.background-image
+  padding-left: 2%
+#footer
+  padding-left: 7%
+  font-size: 110%
+#spacer
+  height: 50px
+
 $custom-color: rgb(217,185,35)
 
 .top-bar
@@ -74,9 +82,9 @@ dl.soldeoro
 
 table.data
   width: 100%
-  th 
+  th
     width: 0.0em
-  td  
+  td
     width: 0.625em
   .bar
     width: 400px
@@ -100,6 +108,12 @@ table.data
       height: 26px
       line-height: 26px
 
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2)
+//iphones
+@media only screen and  (max-device-width : 480px)
   div.background-image
     padding-top: 20%
+  #footer
+    padding-left: 5%
+    font-size: 60%
+  #spacer
+    height: 20px
