@@ -45,36 +45,49 @@ body
         li
           a href="/"
             .icon.flaticon.stroke.home
-              |  Origen
+              |  Inicio
+        li.divider
+        li
+          a href="/empresa"
+            .icon.flaticon.stroke.building
+              |   Empresa
         li.divider
         li.has-dropdown
           a href="/"
             .icon.flaticon.stroke.multiple-documents-1
-              |  Inventario
+              | Propiedades 
           ul.dropdown
             li
               a href="/"
                 .icon.flaticon.stroke.home-3
-                |  En Venta
+                |   Compra 
             li
               a href="/"
                 .icon.flaticon.stroke.home-2
-                |  En Renta
+                |   Venta
             li
               a href="/"
-                .icon.flaticon.stroke.photo
-                  |  Otro
+                .icon.flaticon.stroke.home
+                |   Renta
         li.divider
         li
-          a href="/"
-            .icon.flaticon.stroke.photo-gallery-1
-              |  Galeria
+          a[href="/servicios"]
+            .icon.flaticon.stroke.group
+            |  Servicios
+        li.divider
+        li
+          a href="/contacto"
+            .icon.flaticon.stroke.phone
+              |  Contacto
   .row
     .large-12.columns
+    #title
+      h1 Bienes Raices Sol De Oro
+    #photo 
+      img src='/assets/soldeoro-white.png'
+    #body
       == yield
-    .large-12.columns
       #footer
         #spacer
-        p
-          |
-            Bienes Raices Sol de Oro | 1843 Carpinteros Sur, Burócratas | 21020 Mexicali Baja California | Tel: 686.5656256, 686.5547457
+        p 
+          | Bienes Raices Sol de Oro &nbsp | &nbsp 1843 Carpinteros Sur, Burócratas 21020 &nbsp | &nbsp Mexicali, Baja California, MX &nbsp | &nbsp Tel: 686.5656256, 686.5547457

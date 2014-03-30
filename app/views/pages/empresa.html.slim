@@ -1,0 +1,26 @@
+- content_for :title do
+    | Empresa
+
+body
+  #body
+    h4 Principales Servicios
+    p 
+      | Empresa inmobiliaria especialista en la compra, venta, renta de bienes inmuebles, residencial, comercial, industrial.
+  #content    
+    #slides 
+      .orbit-container
+        ul.slides[data-orbit data-options="timer:true"]
+          li
+            img[src="/assets/casa.png" alt="slide 1"]
+            .orbit-caption
+              |  Residencial
+          li
+            img[src="/assets/comercial.png" alt="slide 2"]
+            .orbit-caption
+              |  Comercial 
+          li
+            img[src="/assets/industrial.png" alt="slide 3"]
+            .orbit-caption
+              |  Industrial 
+
+

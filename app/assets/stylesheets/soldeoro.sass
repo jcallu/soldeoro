@@ -1,10 +1,55 @@
+#body
+  position:absolute
+  margin-left:auto
+  margin-right:auto
+
+ol.orbit-bullets
+  display: none
+
 div.background-image
-  padding-left: 2%
+  padding-left: 10%
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  img
+    height: 550px
+
+#body
+  margin-left: auto
+  margin-right: auto
+  width: 85%
+
+#content
+  opacity: 0.9
+  margin-left: auto
+  margin-right: auto
+  width: 85%
+
 #footer
-  padding-left: 7%
-  font-size: 110%
+  padding-left: 150px
+  padding-top: 100%
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  font-size: 9px
+
+#title
+  margin-left: auto
+  margin-right: auto
+  font-size: 15px
+  text-align: center
+
+#photo
+  opacity: .7
+  padding-top: 170px
+  position: absolute
+  z-index: -1
+  padding-left: 150px
+  width: 90%
+  height: 100%
+  
 #spacer
-  height: 50px
+  height: 30px
 
 $custom-color: rgb(217,185,35)
 
@@ -15,28 +60,31 @@ $custom-color: rgb(217,185,35)
 
   li.disabled
     a
-      color: gray
+      color: white
 
   .toggle-topbar.menu-icon a
     padding: 0 20px
 
   .dropdown li a
-    background: $custom-color
+    background: black 
     height: 40px
     padding: 10px 0
     margin-top: auto
     text-indent: 15px
 
   ul li:hover > a
-    color: black
+    color: $custom-color
 
   .name h1 a
     width: 100%
     padding: 0 5px
 
 .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]
-  border-right: solid 1px $custom-color
-  border-left: solid 1px $custom-color
+  //goldbar: border-right: solid 1px $custom-color
+  //goldbar: border-left: solid 1px $custom-color
+  border-right: solid 1px #000
+  border-left: solid 1px #000
+
 
 .sub-nav dd.active a
   background: #5180A2
@@ -112,6 +160,9 @@ table.data
 @media only screen and  (max-device-width : 480px)
   div.background-image
     padding-top: 20%
+  #title
+    h1
+      font-size: 16px
   #footer
     padding-left: 5%
     font-size: 60%

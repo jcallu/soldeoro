@@ -1159,7 +1159,7 @@ $sub-nav-active-color: #fff;
 
 // Background color for the top bar
 
-$topbar-bg: $custom-color;
+$topbar-bg: black;
 
 // Height and margin
 
@@ -1177,15 +1177,15 @@ $topbar-title-font-size: emCalc(25px);
 
 // Link colors and styles for top-level nav
 
-$topbar-link-color: #000;
+$topbar-link-color: $custom-color;
 $topbar-link-weight: bold;
 $topbar-link-font-size: emCalc(17px);
-$topbar-link-hover-lightness: 15% !default; // Darken by 30%
+$topbar-link-hover-lightness: 20% !default; // Darken by 30%
 
 // Top bar dropdown elements
 
-$topbar-dropdown-bg: $custom-color;
-$topbar-dropdown-link-color: #000;
+$topbar-dropdown-bg: black;
+$topbar-dropdown-link-color: $custom-color;
 $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: #000;
 $topbar-dropdown-toggle-alpha: 0.99;
@@ -1196,10 +1196,10 @@ $dropdown-label-color: #000;
 $topbar-menu-link-transform: uppercase;
 $topbar-menu-link-font-size: emCalc(18px);
 $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: #000;
-$topbar-menu-icon-color: #000;
-$topbar-menu-link-color-toggled: #000;
-$topbar-menu-icon-color-toggled: #000;
+$topbar-menu-link-color: $custom-color;
+$topbar-menu-icon-color: $custom-color;
+$topbar-menu-link-color-toggled: $custom-color;
+$topbar-menu-icon-color-toggled: $custom-color;
 
 // Transitions and breakpoint styles
 
