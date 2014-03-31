@@ -1,72 +1,89 @@
-#body
-  position:absolute
-  margin-left:auto
-  margin-right:auto
+$custom-color: rgb(217,185,35)
+
+.orbit-caption#empresa
+  opacity: .8
+  height: 17%
+
+#bar_logo
+  padding-right: 12%
+
+#logo
+  width: 80px
+  height: 80px
+  padding-top: 20px
+  margin-left: 5px
+  margin-right: 5px
+
+#logo2
+  width: 140px
+  height: 75px
+
+
+#slides
+  margin-left: auto
+  margin-right: auto
+  width: 73%
+
+#main_body
+  height: 1000px
+
+#content
+  h2.text
+    font-size: 26px
+  h1.text
+    font-size: 24px
+  p.text
+    font-size: 20px
+  a.text
+    font-size: 20px
+
+#image
+  height: 1050px
+
+#slide_text
+  color: $custom-color
+  font-weight: bold
+  font-size: 30px
 
 ol.orbit-bullets
   display: none
 
-div.background-image
-  padding-left: 10%
-  margin-left: auto
-  margin-right: auto
-  width: 100%
-  img
-    height: 550px
-
 #body
+  opacity: .9
   margin-left: auto
   margin-right: auto
-  width: 85%
-
-#content
-  opacity: 0.9
-  margin-left: auto
-  margin-right: auto
-  width: 85%
 
 #footer
-  padding-left: 150px
-  padding-top: 100%
-  margin-left: auto
-  margin-right: auto
-  width: 100%
-  font-size: 9px
+  text-align: center
+  font-size: 10px
 
 #title
-  margin-left: auto
-  margin-right: auto
   font-size: 15px
   text-align: center
 
-#photo
-  opacity: .7
-  padding-top: 170px
+#background
   position: absolute
   z-index: -1
-  padding-left: 150px
-  width: 90%
-  height: 100%
-  
-#spacer
-  height: 30px
 
-$custom-color: rgb(217,185,35)
+#photo
+  z-index: -1
+  opacity: 0.85
+  margin-left: auto
+  margin-right: auto
+  width: 80%
+
+#spacer
+  height: 10px
 
 .top-bar
   .icon
     display: inline
     margin-left: 5px
-
   li.disabled
     a
       color: white
-
-  .toggle-topbar.menu-icon a
-    padding: 0 20px
-
   .dropdown li a
-    background: black 
+    background: black
     height: 40px
     padding: 10px 0
     margin-top: auto
@@ -74,7 +91,6 @@ $custom-color: rgb(217,185,35)
 
   ul li:hover > a
     color: $custom-color
-
   .name h1 a
     width: 100%
     padding: 0 5px
@@ -101,6 +117,7 @@ dl.soldeoro
   display: block
   text-align: center
   background-color: rgb(23, 49, 68)
+
   dd
     font-size: 40px
     line-height: 1.4em
@@ -145,6 +162,7 @@ table.data
     font-size: 85%
     .bar
       display: none
+
   dl.soldeoro
     width: 130px
     dd
@@ -158,13 +176,40 @@ table.data
 
 //iphones
 @media only screen and  (max-device-width : 480px)
-  div.background-image
-    padding-top: 20%
+  .orbit-caption#empresa
+    opacity: .8
+    height: 20%
+
+  #bar_logo
+    padding-right: 19%
+  #box
+    font-size: 10px
+  #background
+    height: 390px
+  #image
+    height: 350px
   #title
     h1
       font-size: 16px
   #footer
-    padding-left: 5%
-    font-size: 60%
+    font-size: 9px
   #spacer
-    height: 20px
+    height: 0px
+  #content
+    h2.text
+      font-size: 20px
+    h1.text
+      font-size: 18px
+    p.text
+      font-size: 14px
+    a.text
+      font-size: 14px
+  #slides
+    width: 80%
+    height: 80%
+
+  #slide_text
+    p.text
+      font-size: 14px
+      font-weight: bold
+      font-color: $custom-color

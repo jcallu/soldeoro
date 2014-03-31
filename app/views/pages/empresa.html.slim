@@ -1,26 +1,42 @@
 - content_for :title do
-    | Empresa
-
-body
-  #body
-    h4 Principales Servicios
-    p 
-      | Empresa inmobiliaria especialista en la compra, venta, renta de bienes inmuebles, residencial, comercial, industrial.
-  #content    
-    #slides 
-      .orbit-container
-        ul.slides[data-orbit data-options="timer:true"]
-          li
-            img[src="/assets/casa.png" alt="slide 1"]
-            .orbit-caption
-              |  Residencial
-          li
-            img[src="/assets/comercial.png" alt="slide 2"]
-            .orbit-caption
-              |  Comercial 
-          li
-            img[src="/assets/industrial.png" alt="slide 3"]
-            .orbit-caption
-              |  Industrial 
-
-
+  | Empresa
+#title
+  h1 Empresa
+.row[data-equalizer]
+  .large-12.columns.panel[data-equalizer-watch]
+    #content
+      p.text
+        | Empresa inmobiliaria especialista en la compra, venta, renta de bienes inmuebles, residencial, comercial, industrial.
+#slides
+  .orbit-container
+    ul.slides[data-orbit data-options="timer:true" ]
+      li
+        img[src="/assets/casa_compressed.png" alt="slide 1" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text Residencial
+      li
+        img[src="/assets/comercial_compressed.png" alt="slide 2" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text  Comercial
+      li
+        img[src="/assets/industrial_compressed.png" alt="slide 3" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text  Industrial
+      li
+        img[src="/assets/lot_compressed.png" alt="slide 3" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text  Terrenos
+      li
+        img[src="/assets/casa2_compressed.png" alt="slide 1" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text Residencial
+      li
+        img[src="/assets/warehouse_compressed.png" alt="slide 3" ]
+        .orbit-caption#empresa
+          #slide_text
+            p.text  Industrial

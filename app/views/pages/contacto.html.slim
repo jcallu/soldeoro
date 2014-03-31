@@ -1,12 +1,31 @@
 - content_for :title do
-    | Contacto 
+  | Contacto
 
-body
-  #body
-    h4 Contacto:
-    p 
-      | Domicilio: Carpinteros Sur # 1843 Colonia Burocrata, Mexicali B.C. 21020
-    P
-      | Telefonos: (686) 565-6256, 554-7457
-    p
-      | Email: soldeorobienesraices@yahoo.com
+#title
+  h1 Contacto
+.row[data-equalizer]
+  #box
+    .large-8.columns.panel[data-equalizer-watch]
+      #content
+        h1.text
+          | Bienes Raices Sol De Oro
+        p.text
+          | Domicilio:
+          br
+          | &nbsp &nbsp Carpinteros Sur # 1843 Colonia Burocrata
+          br
+          | &nbsp &nbsp Mexicali B.C. 21020, Mexico
+          br
+          | Telefonos:
+          br
+          | &nbsp &nbsp
+          = phone_number_link( "(686) 565-6256", )
+          br
+          | &nbsp &nbsp
+          = phone_number_link( "(686) 554-7457", )
+          br
+          | Email:
+          br
+          a.text href="mailto:soldeorobienesraices@yahoo.com" &nbsp &nbsp SOLDEOROBIENESRAICES@YAHOO.COM
+
+
