@@ -30,4 +30,13 @@ SolDeOro::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  ActionMailer::Base.smtp_settings = {
+   :address => "smtp.gmail.com",
+   :port => 587,
+   :domain => "bienesraices.com.mx",
+   :authentication => :login,
+   :user_name => ENV['GMAIL_USERNAME'],
+   :password => ENV['GMAIL_PASSWD'],
+   }
 end

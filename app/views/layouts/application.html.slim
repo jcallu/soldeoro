@@ -32,21 +32,20 @@ head
 body
   nav.top-bar.container
     ul.title-area
-      li.name[style="width:50%"]
-        h1
-          a href="/" = yield :title
+      li.name
+        a href="/"
+          img#logo2 src="/assets/soldeoro-logo2.png"
       li.divider
       li.toggle-topbar.menu-icon
         a href="#"
           | Menu
           .icon.flaticon.stroke.menu-3
     section.top-bar-section
+
       ul.left
         li.divider
         li
           a href="/"
-            img#logo2 src="/assets/soldeoro-logo.jpg"
-            | &nbsp
             .icon.flaticon.stroke.home
             | &nbsp Inicio
         li.divider
@@ -82,17 +81,21 @@ body
           a href="/contacto"
             .icon.flaticon.stroke.phone
               |  Contacto
+        li.divider
         li
-          = phone_number_link( "(686) 565-6256", )
-  .row#main_body
-    .large-12.columns#main_body
-      #background
-        #photo
-          img#image src='/assets/soldeoro-white.png'
-        #footer
-          #spacer
-          p
-            | Bienes Raices Sol de Oro &nbsp | &nbsp 1843 Carpinteros Sur, Burócratas 21020 &nbsp | &nbsp Mexicali, Baja California, MX &nbsp | &nbsp Tel: 686.5656256, 686.5547457
-      #body
-        == yield
+          = phone_number_link( "(686) 565-6256" )
+  .row
+    .large-12.columns
+      .content
+        #title
+          - if current_page?(root_url)
+            h1 Bienes Raices Sol De Oro
+          - else
+            h1 = yield(:title)
 
+        #page
+          #page_container
+            == yield
+          #footer
+            p
+              | Bienes Raices Sol de Oro &nbsp | &nbsp 1843 Carpinteros Sur, Burócratas 21020 &nbsp | &nbsp Mexicali, Baja California, MX &nbsp | &nbsp Tel: (686) 565-6256, (686) 554-7457

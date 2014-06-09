@@ -1,28 +1,27 @@
-- content_for :title do
-  | Servicios
-#title
-  h1 Servicios
-.row[data-equalizer style="padding-left:10px"]
-  .large-6.columns.panel[data-equalizer-watch]
-    #content
-      h2.text Principales Servicios
-      p.text
-        | • Corretaje
-        br
-        | • Avaluos Comerciales
-        br
-        | • Banco de Rentas
-        br
-        | • Administración de Rentas
-        br
-        | • Tramites Notariales
-        br
-        | • Deslindes y Certificados
-        br
-        | • Estudios de Mercado
-        br
-        | • Legal
-        br
-        | • Fiscal
-        br
-        | • Comercial
+.container#content[align="left" style="margin-left: 20px"]
+  - content_for :title do
+    | Servicios
+  .row[data-equalizer style="padding-left:10px"]
+    .large-6.columns.panel[data-equalizer-watch]
+      #content[align="left"]
+        h2.text Principales Servicios
+        p.text
+          | • Corretaje
+          br
+          | • Avaluos Comerciales
+          br
+          | • Banco de Rentas
+          br
+          | • Administración de Rentas
+          br
+          | • Tramites Notariales
+          br
+          | • Deslindes y Certificados
+          br
+          | • Estudios de Mercado
+          br
+          | • Legal
+          br
+          | • Fiscal
+          br
+          | • Comercial

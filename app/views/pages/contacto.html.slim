@@ -1,15 +1,12 @@
-- content_for :title do
-  | Contacto
-
-#title
-  h1 Contacto
-.row[data-equalizer style="padding-left:10px"]
-  #box
-    .large-8.columns.panel[data-equalizer-watch]
-      #content.contact
-        h1.text
-          | Bienes Raices Sol De Oro
+.container#content[align="left" style="margin-left: 20px"]
+  - content_for :title do
+    | Contacto
+  .row[data-equalizer style="padding-left:10px"]
+    .large-8.columns.panel[data-equalizer-watch  style="width:800px"]
+      #content[align="left"]
         p.text
+          | Bienes Raices Sol De Oro
+          br
           | Domicilio:
           br
           | &nbsp &nbsp Carpinteros Sur # 1843 Colonia Burocrata
@@ -26,6 +23,6 @@
           br
           | Email:
           br
-          a.text href="mailto:soldeorobienesraices@yahoo.com" &nbsp &nbsp soldeorobienesraices@yahoo.com
-
-
+          a.text href="mailto:soldeoro.contacto@gmail.com" &nbsp &nbsp soldeoro.contacto@gmail.com
+        #contact_iframe[style="margin-left:15px;margin-right:15px"] 
+          iframe[src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3359.191217414403!2d-115.4582574!3d32.6543553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d7706ce358b839%3A0xa1c4b84a49fde249!2sCarpinteros+Sur+1843!5e0!3m2!1sen!2s!4v1402120464535" width="100%" height="500px" frameborder="0" style="border:0"]

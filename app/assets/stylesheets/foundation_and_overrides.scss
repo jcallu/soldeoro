@@ -1159,7 +1159,7 @@ $sub-nav-active-color: #fff;
 
 // Background color for the top bar
 
-$topbar-bg: black;
+$topbar-bg: transparent;
 
 // Height and margin
 
@@ -1184,12 +1184,12 @@ $topbar-link-hover-lightness: 20% !default; // Darken by 30%
 
 // Top bar dropdown elements
 
-$topbar-dropdown-bg: black;
+$topbar-dropdown-bg: white;
 $topbar-dropdown-link-color: $custom-color;
 $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: #000;
+$topbar-dropdown-toggle-color: lighten($custom-color, 10%);
 $topbar-dropdown-toggle-alpha: 0.99;
-$dropdown-label-color: #000;
+$dropdown-label-color: $custom-color;
 
 // Top menu icon styles
 
@@ -1203,7 +1203,7 @@ $topbar-menu-icon-color-toggled: $custom-color;
 
 // Transitions and breakpoint styles
 
-$topbar-transition-speed: 300ms;
+$topbar-transition-speed: 3000ms;
 //$topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
 //$topbar-media-query: "only screen and (min-width: "#{$topbar-breakpoint}")";
 

@@ -1,0 +1,12 @@
+.container#content[align="left" style="margin-left: 20px"]
+  h1 Contacto
+  = simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
+    = f.input :name, :required => true, :label => "Nombre"
+    = f.input :telephone, :as => :text, :required => true, :label => "Telefono"
+    = f.input :email, :required => true, :label => "Correo Electronico"
+    = f.input :message, :as => :text, :required => true, :input_html => {:rows => 10}, :label => "Mensaje o Comentario"
+
+    .hidden
+      = f.input :nickname, :hint => 'Leave this field blank!'
+    .form-actions
+      = f.button :submit, 'Send message', :class=> "btn btn-primary"
