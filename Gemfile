@@ -18,6 +18,8 @@ group :development do
   gem 'pry'
 end
 
+gem 'unicorn'
+
 group :production do
   gem 'rails_12factor'
 end
