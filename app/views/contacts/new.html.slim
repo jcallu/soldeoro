@@ -1,8 +1,8 @@
-h1[style="font-size: 40px"] Bienes Raices Sol de Oro
+h1.business_title Bienes Raices Sol de Oro
 .container#content[align="left" style="margin-left: 20px"]
   br
   br
-  p[style="font-size:20px"] Contactános! Será un placer atenderte.
+  p.contact_us Contactános! Será un placer atenderte.
   = simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
     = f.input :name, :required => true, :label => "Nombre"
     = f.input :telephone, :as => :text, :required => true, :label => "Telefono"
@@ -12,4 +12,4 @@ h1[style="font-size: 40px"] Bienes Raices Sol de Oro
     .hidden
       = f.input :nickname, :hint => 'Leave this field blank!'
     .form-actions
-      = f.button :submit, 'Send message', :class=> "btn btn-primary"
+      = f.button :submit, 'Mandar Mensaje', :class=> "btn btn-primary"
