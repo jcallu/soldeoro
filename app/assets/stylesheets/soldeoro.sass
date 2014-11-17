@@ -8,11 +8,23 @@ $custom-color: rgb(217,185,35)
   text-shadow: 0 -.5px rgba(0, 0, 0, .3)
 
 .top-bar-section li a:not(.button)
-  color: black
+  color: black !important
   font-size: 24px
 
+body > nav > section > ul > li.has-dropdown.not-click > ul > li > a
+  background: white 
+
+body > nav > section > ul > li.has-dropdown.not-click > ul > li
+  border: 1px solid $custom-color
+
+.top-bar .dropdown li a
+  background: white !important
+
+.top-bar .dropdown li a:hover
+  background: $custom-color !important
+
 .top-bar.expanded .toggle-topbar a,.top-bar .toggle-topbar.menu-icon a
-  color: black
+  color: white 
   font-size: 24px
 
 #page_container
@@ -39,6 +51,25 @@ $custom-color: rgb(217,185,35)
 .top-bar-section ul.left
   float: none !important
 
+.orbit-container
+  width: 250px !important
+  height: 210px !important
+  float: left !important
+
+.image_resize
+  width: 250px !important
+  height: 250px !important 
+
+.description
+  text-align: left !important
+  padding-left: 260px !important
+
+.cta-button
+  background: white !important
+
+.orbit-next, .orbit-prev
+  width: 35px !important
+  height: 40px !important
 
 #background
   z-index: -99999
@@ -159,6 +190,9 @@ ol.orbit-bullets
 
 .hidden
   display: none
+
+.show
+  display: block
 
 dl.soldeoro
   width: 175px

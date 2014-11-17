@@ -53,24 +53,24 @@ body
           a href="/empresa"
             .icon.flaticon.stroke.building
               |   Empresa
-        /li.divider
-        /li.has-dropdown
-          a href="/"
+        li.divider
+        li.has-dropdown
+          a href="/venta"
             .icon.flaticon.stroke.multiple-documents-1
               | Propiedades
           ul.dropdown
             li
-              a href="/"
-                .icon.flaticon.stroke.home-3
-                |   Compra
-            li
-              a href="/"
+              a#propiedades_venta href="/venta"
                 .icon.flaticon.stroke.home-2
                 |   Venta
             li
-              a href="/"
+              a#propiedades_renta href="/renta"
                 .icon.flaticon.stroke.home
                 |   Renta
+            li
+              a#propiedades_compra href="/compra"
+                .icon.flaticon.stroke.home-3
+                |   Compra                
         li.divider
         li
           a[href="/servicios"]

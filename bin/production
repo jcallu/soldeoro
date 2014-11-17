@@ -1,2 +1,0 @@
-#!/bin/sh
-HEROKU_APP=soldeoro-promote-production exec heroku "$@"
