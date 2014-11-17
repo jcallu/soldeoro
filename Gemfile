@@ -36,6 +36,7 @@ gem 'zurb-foundation'
 gem 'mail_form'
 gem 'simple_form'
 
+gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
