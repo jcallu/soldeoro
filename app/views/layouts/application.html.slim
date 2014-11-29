@@ -55,22 +55,49 @@ body
               |   Empresa
         li.divider
         li.has-dropdown
-          a href="/venta"
+          a href="#"
             .icon.flaticon.stroke.multiple-documents-1
               | Propiedades
           ul.dropdown
-            li
-              a#propiedades_venta href="/venta"
+            li.has-dropdown
+              a href="#"
                 .icon.flaticon.stroke.home-2
-                |   Venta
-            li
-              a#propiedades_renta href="/renta"
+                |  Casas
+              ul.dropdown
+                li#cuadro
+                  a#venta href="/casas_venta"
+                    .icon.flaticon.stroke.home-2  
+                    | Venta
+                li#cuadro
+                  a#renta href="/casas_renta"
+                    .icon.flaticon.stroke.home-2  
+                    | Renta                     
+            li.has-dropdown
+              a#terreno href="#"
                 .icon.flaticon.stroke.home
-                |   Renta
-            li
-              a#propiedades_compra href="/compra"
+                | Terrenos 
+              ul.dropdown
+                li#cuadro
+                  a#venta href="/terrenos_venta"
+                    .icon.flaticon.stroke.home-2  
+                    | Venta
+                li#cuadro
+                  a#renta href="/terrenos_renta"
+                    .icon.flaticon.stroke.home-2  
+                    | Renta                 
+            li.has-dropdown
+              a#local href="#"
                 .icon.flaticon.stroke.home-3
-                |   Compra                
+                | Locales                
+              ul.dropdown
+                li#cuadro
+                  a#venta href="/locales_venta"
+                    .icon.flaticon.stroke.home-2  
+                    | Venta
+                li#cuadro
+                  a#renta href="/locales_renta"
+                    .icon.flaticon.stroke.home-2  
+                    | Renta                 
         li.divider
         li
           a[href="/servicios"]
